@@ -1,0 +1,18 @@
+pip
+python-dotenv
+-e .
+torch
+
+torch>=1.10.0
+
+wandb>=0.12.0
+
+numpy>=1.21.0
+scipy>=1.7.0
+
+datasets==3.4.0
+transformers==4.16.2
+tokenizers==0.13.2
+evaluate==0.4.0
+rouge_score==0.1.2
+einops==0.6.0
