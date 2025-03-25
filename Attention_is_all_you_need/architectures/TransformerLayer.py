@@ -1,5 +1,5 @@
 import torch.nn as nn
-from MHA import MultiheadAttention
+from architectures.MHA import MultiheadAttention
 import torch.nn.functional as F
 
 class TransformerLayer(nn.Module):

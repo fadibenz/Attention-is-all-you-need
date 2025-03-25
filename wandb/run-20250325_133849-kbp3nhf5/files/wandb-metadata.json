@@ -1,0 +1,42 @@
+{
+  "os": "Linux-6.1.85+-x86_64-with-glibc2.35",
+  "python": "CPython 3.11.11",
+  "startedAt": "2025-03-25T13:38:49.970697Z",
+  "program": "/content/drive/MyDrive/Colab Notebooks/Attention-is-all-you-need/Attention-is-all-you-need/Attention_is_all_you_need/main.py",
+  "codePath": "Attention_is_all_you_need/main.py",
+  "git": {
+    "remote": "https://github.com/fadibenz/Attention-is-all-you-need",
+    "commit": "a8b718d24e825afe963e5ab00f7ab720e5782430"
+  },
+  "email": "benzaimafadi@gmail.com",
+  "root": "/content/drive/MyDrive/Colab Notebooks/Attention-is-all-you-need/Attention-is-all-you-need",
+  "host": "b9fff13925b6",
+  "executable": "/usr/bin/python3",
+  "codePathLocal": "Attention_is_all_you_need/main.py",
+  "cpu_count": 1,
+  "cpu_count_logical": 2,
+  "gpu": "Tesla T4",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "120942624768",
+      "used": "45258702848"
+    }
+  },
+  "memory": {
+    "total": "13609431040"
+  },
+  "cpu": {
+    "count": 1,
+    "countLogical": 2
+  },
+  "gpu_nvidia": [
+    {
+      "name": "Tesla T4",
+      "memoryTotal": "16106127360",
+      "cudaCores": 2560,
+      "architecture": "Turing"
+    }
+  ],
+  "cudaVersion": "12.4"
+}

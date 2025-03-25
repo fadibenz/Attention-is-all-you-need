@@ -5,17 +5,14 @@ import functools
 
 from datasets import load_dataset
 from transformers import AutoTokenizer, DataCollatorForSeq2Seq
-from indices_blob import blob
+from data.indices_blob import blob
 
 def tokenize(tokenizer, data):
-    inputs = [doc for doc in data['documents']]
-    summary = [summary for summary in data['summary']]
-
-    inputs = tokenizer(inputs, max_length='1024', truncation=True)
-    labels = tokenizer(summary, max_length='128', truncation=True)
-    inputs['labels'] = labels['input_ids']
-
-    return inputs
+    inputs = [doc for doc in data["document"]]
+    model_inputs = tokenizer(inputs, max_length=1024, truncation=True)
+    labels = tokenizer(data["summary"], max_length=128, truncation=True)
+    model_inputs["labels"] = labels["input_ids"]
+    return model_inputs
 
 def make_dataset():
     xsum = load_dataset('xsum')
