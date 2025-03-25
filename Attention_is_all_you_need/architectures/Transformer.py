@@ -1,5 +1,5 @@
 import torch.nn as nn
-from TransformerLayer import TransformerLayer
+from architectures.TransformerLayer import TransformerLayer
 import torch
 from transformers.modeling_outputs import Seq2SeqLMOutput
 

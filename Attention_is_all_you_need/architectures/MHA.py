@@ -1,7 +1,8 @@
 from torch import nn
 import einops
 
-from scaled_dot_product import scaled_dot_product_attention
+from architectures.scaled_dot_product import scaled_dot_product_attention
+
 class MultiheadAttention(nn.Module):
     def __init__(self, d_model, n_heads):
         super().__init__()
